@@ -13,6 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/pagina', 'PageController@pagina')->name('pagina');
+
 Route::get('/', function () {
-    return view('home');
+
+    $data = [
+        'nome' => 'Pasquale',
+        'cognome' => 'Isabelli',
+    ];
+
+    return view('home', $data);
 });
+
+

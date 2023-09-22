@@ -1,15 +1,9 @@
-<?php
-
-$project_title = 'Laravel Primi Passi';
-
-?>
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php echo $project_title ?></title>
+  <title>Title</title>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <link rel="stylesheet" href="css/style.css">
@@ -18,16 +12,7 @@ $project_title = 'Laravel Primi Passi';
   <link rel="icon" type="image/x-icon" href="https://boolean.careers/favicon/favicon.ico">
 </head>
 <body>
-
-  <nav>
-    <a href="{{ route('pagina') }}">Vai alla pagina</a>
-  </nav>
-
-
-  <main>
-    <h1 class="text-center mt-5 fw-bold">Hello World!</h1>
-    <h2 class="text-center fw-bold">Benvenuto {{ $nome }} {{ $cognome }}</h2>
-  </main>
-
+  <h1>Benvenuto alla mia pagina</h1>
+  <p>Questa è la pagina a cui sei stato collegato.</p>
 </body>
 </html>
