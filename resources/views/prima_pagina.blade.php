@@ -1,15 +1,9 @@
-<?php
-
-$project_title = 'Laravel Primi Passi';
-
-?>
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php echo $project_title ?></title>
+  <title>Title</title>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <link rel="stylesheet" href="css/style.css">
@@ -32,7 +26,7 @@ $project_title = 'Laravel Primi Passi';
             <a class="nav-link text-white" aria-current="page" href="/">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="{{ route('prima_pagina') }}">PAGINA 1</a>
+            <a class="nav-link text-white" href="#">PAGINA 1</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="{{ route('seconda_pagina') }}">PAGINA 2</a>
@@ -42,23 +36,7 @@ $project_title = 'Laravel Primi Passi';
     </div>
   </nav>
   <main>
-    <h1 class="text-center mt-5 fw-bold">Hello World!</h1>
-    <h2 class="text-center fw-bold">Benvenuto {{ $nome }} {{ $cognome }}</h2>
-
-    <div class="container mt-5 mb-5">
-      <h3 class=" fw-bold">Dream Team:</h3>
-      <div class="d-flex flex-wrap gap-3">
-        @foreach ($cards as $card)
-          <div style="width: calc(100% / 3 - 2rem);" class="card border">
-            <img src="{{ $card["image"] }}" class="card-img-top">
-            <div class="card-body text-center">
-              <h5 class="card-title">{{ $card["title"] }}</h5>
-              <p class="card-text">{{ $card["role"] }}</p>
-            </div>
-          </div>
-        @endforeach
-      </div>
-    </div>
+    <h1 class="text-center mt-5 fw-bold">Benvenuto nella pagina 1</h1>
   </main>
 </body>
 </html>
